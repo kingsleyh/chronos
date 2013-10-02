@@ -16,13 +16,15 @@ class TimesheetsController < ApplicationController
 
   def edit
     @timesheet = Timesheet.find(params[:id])
+    @timerows = @timesheet.timerows
+    @timerow = Timerow.new
   end
 
   def create
     @timesheet = Timesheet.new(timesheet_params)
     if @timesheet.save
       # success
-      redirect_to :timesheets
+      redirect_to edit_timesheet_path(@timesheet.id)
     else
       # error handling
       render new_timesheet_path
@@ -31,7 +33,7 @@ class TimesheetsController < ApplicationController
 
   def update
     @timesheet = Timesheet.find(params[:id])
-    if @timesheet.update_attributes(task_params)
+    if @timesheet.update_attributes(timesheet_params)
       flash[:notice] = "Successfully updated Timesheet."
       redirect_to :timesheets
     else

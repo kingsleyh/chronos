@@ -45,7 +45,7 @@
       <tr>
         <td><%= timesheet.week_commencing %></td>
         <td class="action-table">
-          <%= link_to image_tag('/design/images/icon/table_del.png'), destroy_timesheet_path(timesheet.id), :data => {:confirm => "Are You Sure You Want To Delete #{timesheet.name}?"}, :method => :get %>
+          <%= link_to image_tag('/design/images/icon/table_del.png'), destroy_timesheet_path(timesheet.id), :data => {:confirm => "Are You Sure You Want To Delete #{timesheet.week_commencing}?"}, :method => :get %>
           <%= link_to image_tag('/design/images/icon/table_edit.png'), edit_timesheet_path(timesheet.id) %>
       </tr>
       <% end %>

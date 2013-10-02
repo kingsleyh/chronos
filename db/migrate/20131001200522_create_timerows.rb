@@ -1,8 +1,8 @@
 class CreateTimerows < ActiveRecord::Migration
   def change
     create_table :timerows do |t|
-      t.integer :timsheet_id
-      t.integer :task_name
+      t.integer :timesheet_id
+      t.string :task_name
       t.float :monday
       t.float :tuesday
       t.float :wednesday

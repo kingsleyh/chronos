@@ -27,13 +27,14 @@ Chronos::Application.routes.draw do
   #   end
 
 
-  resources :customers, :projects, :tasks, :timesheets
+  resources :customers, :projects, :tasks, :timesheets, :timerows
 
 
   get 'customers/destroy/:id' => 'customers#destroy', :as => :destroy_customer
   get 'projects/destroy/:id' => 'projects#destroy', :as => :destroy_project
   get 'tasks/destroy/:id' => 'tasks#destroy', :as => :destroy_task
-  get 'timesheet/destroy/:id' => 'timesheet#destroy', :as => :destroy_timesheet
+  get 'timesheets/destroy/:id' => 'timesheets#destroy', :as => :destroy_timesheet
+  get 'timerows/destroy/:id' => 'timerows#destroy', :as => :destroy_timerow
 
   # Example resource route with sub-resources:
   #   resources :products do

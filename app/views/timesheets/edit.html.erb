@@ -1,11 +1,149 @@
 <!--page title-->
 <div class="pagetitle">
-  <h1>Edit Task</h1>
+  <h1>Edit Timesheet</h1>
 
   <div class="clearfix"></div>
 </div>
 <!--page title end-->
 
-<%= render :partial => 'form', :locals => {:button => :update} %>
+<%
+
+   def for_day(start, number)
+     start.advance(:days => number)
+   end
+
+   @week_start = @timesheet.week_commencing
+
+   @days = [
+           for_day(@week_start, 0),
+           for_day(@week_start, 1),
+           for_day(@week_start, 2),
+           for_day(@week_start, 3),
+           for_day(@week_start, 4),
+           for_day(@week_start, 5),
+           for_day(@week_start, 6),
+   ]
+
+%>
+
+<div class="grid">
+  <div class="grid-title">
+    <div class="pull-left">
+      <div class="icon-title"><i class="icon-bookmark"></i></div>
+      <span>Timesheet Details</span>
+
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="grid-content">
+
+    <p><%= @timesheet.week_commencing %></p>
+
+    <table class="table table-bordered table-mod-2" id="datatable_2">
+      <thead>
+      <tr>
+        <th class="span2">Task</th>
+        <% @days.each do |day| %>
+            <th class="span1"><%= raw(day.strftime("%A %% %d %b %Y").gsub('%', '<br/>')) %></th>
+        <% end %>
+        <th class="span1">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <% @timerows.each do |timerow| %>
+          <tr>
+            <td class="span2">
+              <%= timerow.task_name %>
+            </td>
+            <% @days.each do |day| %>
+                <% weekday = day.strftime("%A").downcase %>
+                <td> <%= timerow.send(weekday) %></td>
+            <% end %>
+
+            <td class="action-table">
+              <%= link_to image_tag('/design/images/icon/table_del.png'), destroy_timerow_path(timerow.id), :data => {:confirm => "Are You Sure You Want To Delete #{timerow.id}?"}, :method => :get %>
+            </td>
+
+          </tr>
+      <% end %>
+
+      </tbody>
+    </table>
+
+    <div class="formRow">
+      <div class="formRight">
+        <input type="submit" class="btn btn-primary" value="Submit Timesheet">
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+  </div>
+</div>
+
+<%= form_for(@timerow) do |f| %>
+
+    <!--Input fields Start-->
+    <div class="grid">
+      <div class="grid-title">
+        <div class="pull-left">
+          <div class="icon-title"><i class="icon-bookmark"></i></div>
+          <span>Timesheet Tasks</span>
+
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="grid-content">
+
+        <!--- timesheet messing -->
+
+        <table class="table table-bordered table-mod-2" id="datatable_2">
+          <thead>
+          <tr>
+            <th class="span3">Task</th>
+            <% @days.each do |day| %>
+                <th class="span1"><%= raw(day.strftime("%A %% %d %b %Y").gsub('%', '<br/>')) %></th>
+            <% end %>
+          </tr>
+          </thead>
+          <tbody>
+
+
+          <tr>
+            <td class="span3">
+              <%= f.select(:task_name, Task.all.collect { |p| [p.name, p.name] }, {}, {:class => 'chzn-select chosen_select width-10'}) %>
+            </td>
+            <% @days.each do |day| %>
+                <% weekday = day.strftime("%A").downcase %>
+                <td> <%= f.text_field weekday.to_sym, :class => 'span1 input' %></td>
+            <% end %>
+          </tr>
+
+
+          </tbody>
+        </table>
+
+
+        <!--- timesheet messing -->
+
+        <%= f.hidden_field(:timesheet_id, :value => @timesheet.id) %>
+
+        <div class="formRow">
+          <div class="formRight">
+            <input type="submit" class="btn btn-primary" value="Add Task">
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+    </div>
+    <!--Input fields END-->
+
+<% end %>
+
 
 

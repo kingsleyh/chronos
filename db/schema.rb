@@ -45,8 +45,8 @@ ActiveRecord::Schema.define(version: 20131001200522) do
   end
 
   create_table "timerows", force: true do |t|
-    t.integer  "timsheet_id"
-    t.integer  "task_name"
+    t.integer  "timesheet_id"
+    t.string   "task_name"
     t.float    "monday"
     t.float    "tuesday"
     t.float    "wednesday"

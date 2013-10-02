@@ -1,5 +1,4 @@
-
-    <%= nested_form_for(@timesheet) do |f| %>
+<%= form_for(@timesheet) do |f| %>
 
     <!--Input fields Start-->
     <div class="grid">
@@ -15,62 +14,11 @@
       <div class="grid-content">
 
         <div class="formRow">
-          <%= f.label :week_commencing %>
+          <%= f.label :week %>
           <div class="formRight">
-            <%= f.text_field :week_commencing, :class => 'span7 input' %>
+            <%= f.select(:week_commencing, options_for_select(Timesheet.weeks, Time.now.beginning_of_week),{}, {:class => 'chzn-select chosen_select width-10'}) %>
           </div>
         </div>
-
-
-        <%= f.fields_for :timerow do |timerow| %>
-
-
-        <!--- timesheet messing -->
-
-        <%
-
-           def for_day(start,number)
-             start.advance(:days => number)
-           end
-
-           @date = Time.now.next_week
-           @week_start = @date.beginning_of_week
-
-           @days = {:monday => @week_start, :tuesday => for_day(@week_start,1), :wednesday => for_day(@week_start,2), :thursday => for_day(@week_start,3), :friday => for_day(@week_start,4), :saturday => for_day(@week_start,5), :sunday => for_day(@week_start,6)}
-
-
-        %>
-
-        <br/>
-        <br/>
-        <br/>
-
-        <table class="table table-bordered table-mod-2" id="datatable_2">
-          <thead>
-          <tr>
-            <th class="span3">Task</th>
-            <% @days.each  do |day,time|%>
-            <th class="span1"><%= day %> <%= time.strftime("%x") %></th>
-            <% end %>
-            <th class="span1">Actions</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td class="span3">task</td>
-            <% @days.each  do |day,time|%>
-            <td> <%= timerow.text_field :monday, :class => 'span1 input' %></td>
-            <% end %>
-            <td>remove</td>
-          </tr>
-          </tbody>
-        </table>
-
-
-
-
-        <!--- timesheet messing -->
-        <% end %>
 
 
         <div class="formRow">
