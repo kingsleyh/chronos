@@ -1,0 +1,60 @@
+<!--page title-->
+<div class="pagetitle">
+  <h1>Customers</h1>
+  <div class="clearfix"></div>
+</div>
+<!--page title end-->
+
+<br/>
+<div class="pull-left">
+<%= link_to('create new customer', :new_customer, :class => 'btn btn-info') %>
+</div>
+
+<!--Events Table-->
+<div class="grid">
+
+  <div class="grid-title">
+    <div class="pull-left">
+      <div class="icon-title"><i class="icon-eye-open"></i></div>
+      <span>Existing Customers</span>
+
+      <div class="clearfix"></div>
+    </div>
+    <div class="pull-right">
+      <div class="icon-title"><a href="/customers"><i class="icon-refresh"></i></a></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="grid-content overflow">
+
+    <table class="table table-bordered table-mod-2" id="datatable_3">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th class="hidden-mobile">Code</th>
+        <th class="hidden-mobile">Description</th>
+        <th class="hidden-mobile">Active</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.name %></td>
+        <td><%= customer.code %></td>
+        <td><%= customer.description %></td>
+        <td class="hidden-mobile"><span class="<%= status_class(customer.active)%>"><%= customer.active %></span></td>
+        <td class="action-table">
+          <%= link_to image_tag('/design/images/icon/table_del.png'), destroy_customer_path(customer.id), :data => {:confirm => "Are You Sure You Want To Delete #{customer.name}?"}, :method => :get %>
+          <%= link_to image_tag('/design/images/icon/table_edit.png'), edit_customer_path(customer.id) %>
+      </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+    <div class="clearfix"></div>
+  </div>
+
+</div>
+<!--Example Table END-->

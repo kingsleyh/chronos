@@ -1,0 +1,59 @@
+<!--page title-->
+<div class="pagetitle">
+  <h1>Timesheets</h1>
+  <div class="clearfix"></div>
+</div>
+<!--page title end-->
+
+<br/>
+<div class="pull-left">
+<%= link_to('create new timesheet', :new_timesheet, :class => 'btn btn-info') %>
+</div>
+
+<!--Events Table-->
+<div class="grid">
+
+  <div class="grid-title">
+    <div class="pull-left">
+      <div class="icon-title"><i class="icon-eye-open"></i></div>
+      <span>Existing Timesheets</span>
+
+      <div class="clearfix"></div>
+    </div>
+    <div class="pull-right">
+      <div class="icon-title"><a href="/timesheets"><i class="icon-refresh"></i></a></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="grid-content overflow">
+
+    <table class="table table-bordered table-mod-2" id="datatable_3">
+      <thead>
+      <tr>
+        <th>Week Commencing</th>
+        <!--<th class="hidden-mobile">Total Hours</th>-->
+        <!--<th class="hidden-mobile">Description</th>-->
+        <!--<th class="hidden-mobile">Customer</th>-->
+        <!--<th class="hidden-mobile">Project</th>-->
+        <!--<th class="hidden-mobile">Status</th>-->
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @timesheets.each do |timesheet| %>
+      <tr>
+        <td><%= timesheet.week_commencing %></td>
+        <td class="action-table">
+          <%= link_to image_tag('/design/images/icon/table_del.png'), destroy_timesheet_path(timesheet.id), :data => {:confirm => "Are You Sure You Want To Delete #{timesheet.name}?"}, :method => :get %>
+          <%= link_to image_tag('/design/images/icon/table_edit.png'), edit_timesheet_path(timesheet.id) %>
+      </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+    <div class="clearfix"></div>
+  </div>
+
+</div>
+<!--Example Table END-->

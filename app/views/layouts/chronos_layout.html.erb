@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chronos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <%= csrf_meta_tags %>
+
+  <!-- Le styles -->
+  <link href="/design/css/style.css" rel="stylesheet">
+  <link href="/design/css/bootstrap.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="/design/css/jquery-ui-1.8.16.custom.css" media="screen"/>
+  <link rel="stylesheet" href="/design/css/fullcalendar.css" media="screen"/>
+  <link rel="stylesheet" href="/design/css/chosen.css" media="screen"/>
+  <link rel="stylesheet" href="/design/css/glisse.css?1.css">
+  <link rel="stylesheet" href="/design/css/jquery.jgrowl.css">
+  <link rel="stylesheet" href="/design/css/demo_table.css">
+  <link rel="stylesheet" href="/design/css/jquery.fancybox.css?v=2.1.4" media="screen"/>
+
+  <link rel="stylesheet" href="/design/css/icon/font-awesome.css">
+  <link rel="stylesheet" href="/design/css/bootstrap-responsive.css">
+  <link rel="stylesheet" href="/design/js/datepicker/css/datepicker.css">
+  <link type="text/css" href="/design/css/bootstrap-timepicker.min.css"/>
+
+  <!-- Bootstrap Extended -->
+  <link href="/design/extend/jasny-fileupload/css/fileupload.css" rel="stylesheet">
+
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script language="JavaScript">
+      Firefox = navigator.userAgent.indexOf("Firefox") >= 0;
+      if (Firefox) document.write("<link rel='stylesheet' href='/design/css/moz.css' type='text/css'>");
+  </script>
+
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+
+<body>
+<!--BEGIN HEADER-->
+<div id="header" role="banner">
+  <a id="menu-link" class="head-button-link menu-hide" href="#menu"><span>Menu</span></a>
+  <!--Logo--><a href="/admin" class="logo"><h1>B</h1></a><!--Logo END-->
+
+
+  <div class="right">
+
+
+    <!--profile box-->
+    <div class="left profile">
+             <span class="double-spacer"></span>
+
+        <div class="profile-username"><span>Logged in as:</span> Kings</div>
+
+
+    </div>
+    <div class="clearfix"></div>
+    <!--profile box end-->
+
+  </div>
+
+
+</div>
+<!--END HEADER-->
+
+<div id="wrap">
+
+
+  <!--BEGIN SIDEBAR-->
+  <div id="menu" role="navigation">
+
+    <ul class="main-menu">
+      <li><a href="dashboard.html"><i class="general"></i> General</a></li>
+    </ul>
+
+    <ul class="additional-menu">
+      <li><a href="/admin"><i class="icon-home"></i> Dashboard</a></li>
+      <li><a href="/customers"><i class="icon-tasks"></i> Customers</a></li>
+      <li><a href="/projects"><i class="icon-picture"></i> Projects</a></li>
+      <li><a href="/tasks"><i class="icon-group"></i> Tasks</a></li>
+      <li><a href="/timesheets"><i class="icon-money"></i> Timesheets</a></li>
+    </ul>
+
+    <div class="clearfix"></div>
+
+
+  </div>
+  <!--SIDEBAR END-->
+
+
+  <!--BEGIN MAIN CONTENT-->
+  <div id="main" role="main">
+    <div class="block">
+      <div class="clearfix"></div>
+
+
+      <%= yield %>
+
+
+      <!--BEGIN FOOTER-->
+      <div class="footer">
+        <div class="left">Copyright &copy; 2013</div>
+        <div class="right"><a href="#">by MasterThought</a></div>
+        <div class="clearfix"></div>
+      </div>
+      <!--BEGIN FOOTER END-->
+
+      <div class="clearfix"></div>
+    </div>
+    <!--end .block-->
+
+  </div>
+  <!--MAIN CONTENT END-->
+</div>
+<!--/#wrapper-->
+
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/design/js/jquery.min.js"></script>
+<script src="/design/js/jquery-ui.min.js"></script>
+
+<script src="/design/js/rails.js"></script>
+
+<script src="/design/js/bootstrap.min.js"></script>
+<script src="/design/js/google-code-prettify/prettify.js"></script>
+
+<script src="/design/js/jquery.flot.js"></script>
+<script src="/design/js/jquery.flot.pie.js"></script>
+<script src="/design/js/jquery.flot.orderBars.js"></script>
+<script src="/design/js/jquery.flot.resize.js"></script>
+<script src="/design/js/jquery.flot.categories.js"></script>
+<script src="/design/js/graphtable.js"></script>
+<script src="/design/js/fullcalendar.min.js"></script>
+<script src="/design/js/chosen.jquery.min.js"></script>
+<script src="/design/js/autoresize.jquery.min.js"></script>
+<script src="/design/js/jquery.autotab.js"></script>
+<script src="/design/js/jquery.jgrowl_minimized.js"></script>
+<script src="/design/js/jquery.dataTables.min.js"></script>
+<script src="/design/js/jquery.stepy.min.js"></script>
+<script src="/design/js/jquery.validate.min.js"></script>
+<script src="/design/js/raphael.2.1.0.min.js"></script>
+<script src="/design/js/justgage.1.0.1.min.js"></script>
+<script src="/design/js/glisse.js"></script>
+<script src="/design/js/styleswitcher.js"></script>
+<script src="/design/js/moderniz.js"></script>
+<script src="/design/js/jquery.sparkline.min.js"></script>
+<script src="/design/js/slidernav-min.js"></script>
+<script src="/design/js/datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="/design/js/jquery.fancybox.js?v=2.1.4"></script>
+<script type="text/javascript" src="/design/js/bootstrap-timepicker.min.js"></script>
+<!-- Bootstrap Extended -->
+<script src="/design/extend/jasny-fileupload/js/bootstrap-fileupload.js"></script>
+
+<script>
+    Modernizr.load([
+        {
+            load: [
+                '/design/js/main.js'
+            ],
+            complete: function () {
+                $.fn.ready(function () {
+                    window.App.init();
+
+                });
+            }
+        }
+    ]);
+</script>
+<script src="/design/js/application.js"></script>
+
+<script>
+    $('#event_date').datepicker({
+        format: 'dd-mm-yyyy'
+    });
+
+
+    $('#event_start_time').timepicker({
+        template: false,
+        showInputs: false
+    });
+
+    $('#event_finish_time').timepicker({
+          template: false,
+          showInputs: false
+      });
+
+</script>
+
+
+</body>
+</html>
+

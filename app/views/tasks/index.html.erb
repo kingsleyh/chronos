@@ -1,0 +1,64 @@
+<!--page title-->
+<div class="pagetitle">
+  <h1>Tasks</h1>
+  <div class="clearfix"></div>
+</div>
+<!--page title end-->
+
+<br/>
+<div class="pull-left">
+<%= link_to('create new task', :new_task, :class => 'btn btn-info') %>
+</div>
+
+<!--Events Table-->
+<div class="grid">
+
+  <div class="grid-title">
+    <div class="pull-left">
+      <div class="icon-title"><i class="icon-eye-open"></i></div>
+      <span>Existing Tasks</span>
+
+      <div class="clearfix"></div>
+    </div>
+    <div class="pull-right">
+      <div class="icon-title"><a href="/tasks"><i class="icon-refresh"></i></a></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="grid-content overflow">
+
+    <table class="table table-bordered table-mod-2" id="datatable_3">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th class="hidden-mobile">Code</th>
+        <th class="hidden-mobile">Description</th>
+        <th class="hidden-mobile">Customer</th>
+        <th class="hidden-mobile">Project</th>
+        <th class="hidden-mobile">Active</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.name %></td>
+        <td><%= task.code %></td>
+        <td><%= task.description %></td>
+        <td><%= task.project.customer.name %></td>
+        <td><%= task.project.name %></td>
+        <td class="hidden-mobile"><span class="<%= status_class(task.active)%>"><%= task.active %></span></td>
+        <td class="action-table">
+          <%= link_to image_tag('/design/images/icon/table_del.png'), destroy_task_path(task.id), :data => {:confirm => "Are You Sure You Want To Delete #{task.name}?"}, :method => :get %>
+          <%= link_to image_tag('/design/images/icon/table_edit.png'), edit_task_path(task.id) %>
+      </tr>
+      <% end %>
+      </tbody>
+    </table>
+
+    <div class="clearfix"></div>
+  </div>
+
+</div>
+<!--Example Table END-->
