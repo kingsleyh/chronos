@@ -48,21 +48,35 @@
 <!--BEGIN HEADER-->
 <div id="header" role="banner">
   <a id="menu-link" class="head-button-link menu-hide" href="#menu"><span>Menu</span></a>
-  <!--Logo--><a href="/admin" class="logo"><h1>B</h1></a><!--Logo END-->
+  <!--Logo--><a href="/timesheets" class="logo"><h1>B</h1></a><!--Logo END-->
 
 
   <div class="right">
 
 
     <!--profile box-->
-    <div class="left profile">
-             <span class="double-spacer"></span>
+    <% if user_signed_in? %>
+        <div class="dropdown left profile">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <span class="double-spacer"></span>
 
-        <div class="profile-username"><span>Logged in as:</span> Kings</div>
+            <div class="profile-username"><span>Welcome, </span><%= current_user.email %></div>
+            <div class="profile-caret"><span class="caret"></span></div>
+            <span class="double-spacer"></span>
+          </a>
 
+          <div class="dropdown-menu pull-right profile-box">
+            <div class="triangle-3"></div>
 
-    </div>
-    <div class="clearfix"></div>
+            <ul class="profile-navigation">
+              <li> <%= link_to raw('<i class="icon-user"></i> My Profile'), edit_user_registration_path %></li>
+              <li> <%= link_to raw('<i class="icon-cog"></i> Settings'), user_settings_path %></li>
+              <li> <%= link_to raw('<i class="icon-off"></i> Logout'), destroy_user_session_path, method: :delete %></li>
+            </ul>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+    <% end %>
     <!--profile box end-->
 
   </div>
@@ -78,15 +92,18 @@
   <div id="menu" role="navigation">
 
     <ul class="main-menu">
-      <li><a href="dashboard.html"><i class="general"></i> General</a></li>
+      <li><a href="/timesheets"><i class="general"></i> Chronos</a></li>
     </ul>
 
     <ul class="additional-menu">
-      <li><a href="/admin"><i class="icon-home"></i> Dashboard</a></li>
-      <li><a href="/customers"><i class="icon-tasks"></i> Customers</a></li>
-      <li><a href="/projects"><i class="icon-picture"></i> Projects</a></li>
-      <li><a href="/tasks"><i class="icon-group"></i> Tasks</a></li>
       <li><a href="/timesheets"><i class="icon-money"></i> Timesheets</a></li>
+      <% if current_user.admin? %>
+          <li><a href="/customers"><i class="icon-tasks"></i> Customers</a></li>
+          <li><a href="/projects"><i class="icon-picture"></i> Projects</a></li>
+          <li><a href="/tasks"><i class="icon-group"></i> Tasks</a></li>
+          <li><a href="/users"><i class="icon-group"></i> Users</a></li>
+          <li><a href="/approvals"><i class="icon-money"></i> Approvals</a></li>
+      <% end %>
     </ul>
 
     <div class="clearfix"></div>
@@ -101,14 +118,21 @@
     <div class="block">
       <div class="clearfix"></div>
 
+      <% flash.each do |name, msg| %>
+          <div style="margin-top:10px;" id="flash_<%= name %>" class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <%= msg %>
+          </div>
+      <% end %>
 
       <%= yield %>
 
 
       <!--BEGIN FOOTER-->
       <div class="footer">
-        <div class="left">Copyright &copy; 2013</div>
-        <div class="right"><a href="#">by MasterThought</a></div>
+        <div class="left"></div>
+        <div class="right"><a href="http://www.masterthought.net"><img src="/design/images/masterthought_logo.png"></a>
+        </div>
         <div class="clearfix"></div>
       </div>
       <!--BEGIN FOOTER END-->
@@ -190,9 +214,9 @@
     });
 
     $('#event_finish_time').timepicker({
-          template: false,
-          showInputs: false
-      });
+        template: false,
+        showInputs: false
+    });
 
 </script>
 

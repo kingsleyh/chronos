@@ -1,9 +1,10 @@
 Chronos::Application.routes.draw do
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'timesheets#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -26,15 +27,22 @@ Chronos::Application.routes.draw do
   #     end
   #   end
 
+  get 'users/settings' => 'users#settings', :as => :user_settings
+  get 'timesheets/submit' => 'timesheets#submit', :as => :timesheet_submit
+  get 'timesheets/approve' => 'timesheets#approve', :as => :timesheet_approve
+  get 'timesheets/reject' => 'timesheets#reject', :as => :timesheet_reject
+  post 'users/update_settings' => 'users#update_settings', :as => :update_settings
 
-  resources :customers, :projects, :tasks, :timesheets, :timerows
-
+  resources :customers, :projects, :tasks, :timesheets, :timerows, :users, :approvals
 
   get 'customers/destroy/:id' => 'customers#destroy', :as => :destroy_customer
   get 'projects/destroy/:id' => 'projects#destroy', :as => :destroy_project
   get 'tasks/destroy/:id' => 'tasks#destroy', :as => :destroy_task
   get 'timesheets/destroy/:id' => 'timesheets#destroy', :as => :destroy_timesheet
   get 'timerows/destroy/:id' => 'timerows#destroy', :as => :destroy_timerow
+  get 'users/destroy/:id' => 'users#destroy', :as => :destroy_user
+
+  post 'users/create_user' => 'users#create_user', :as => :create_user
 
   # Example resource route with sub-resources:
   #   resources :products do

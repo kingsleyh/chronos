@@ -58,7 +58,11 @@
 
 
 -----------------------------------------------------------------------------------*/
-
+.field_with_errors {
+  padding: 2px;
+  background-color: #ff415a;
+  display: table;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	0.	CSS Reset & Clearfix - http://meyerweb.com/eric/tools/css/reset/
@@ -103,7 +107,7 @@ table.table {
 	height:60px;
 }
 .logo {
-	background:url(../images/logo2.png) no-repeat;
+	background:url(../images/admin_logo.png) no-repeat;
 	background-size:102px 23px;
 	display:block;
 	width:102px;

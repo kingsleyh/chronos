@@ -2,52 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48dad9db-9040-4531-bcc8-d05c240cdcc6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/timesheets/t.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/timetask.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/approvals/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/settings.html.erb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/timetask.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/design/images/logo2.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/chronos.iml" afterPath="$PROJECT_DIR$/.idea/chronos.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131001103118_create_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20131001103118_create_users.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131001195800_create_timesheets.rb" afterPath="$PROJECT_DIR$/db/migrate/20131001195800_create_timesheets.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131001200522_create_timerows.rb" afterPath="$PROJECT_DIR$/db/migrate/20131001200522_create_timerows.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/customers/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/customers/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/tasks/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/timesheets/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/timesheets/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/design/js/application.js" afterPath="$PROJECT_DIR$/public/design/js/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/chronos_layout.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/chronos_layout.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/customer.rb" afterPath="$PROJECT_DIR$/app/models/customer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/customers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/customers_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/timesheets/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/timesheets/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/customers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/customers/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/index.html.erb" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/timesheets/index.html.erb" afterPath="$PROJECT_DIR$/app/views/timesheets/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/new.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/new.html.erb" afterPath="$PROJECT_DIR$/app/views/tasks/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/project.rb" afterPath="$PROJECT_DIR$/app/models/project.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/design/css/style.css" afterPath="$PROJECT_DIR$/public/design/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/task.rb" afterPath="$PROJECT_DIR$/app/models/task.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/timerows_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/timerows_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/timesheet.rb" afterPath="$PROJECT_DIR$/app/models/timesheet.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/timesheets_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/timesheets_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/timesheets_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/timesheets_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chronos.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380622993238" ignored="false" />
     <file path="/Gemfile" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380659342635" ignored="false" />
     <file path="$PROJECT_DIR$/../trackrecord/Gemfile" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380623195166" ignored="false" />
-    <file path="$PROJECT_DIR$/../trackrecord/db/schema.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380623427759" ignored="false" />
-    <file path="/customer.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380623624057" ignored="false" />
+    <file path="$PROJECT_DIR$/../trackrecord/db/schema.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380976060758" ignored="false" />
+    <file path="/customer.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381010443853" ignored="false" />
     <file path="/project.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380650233099" ignored="false" />
-    <file path="/task.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380623648602" ignored="false" />
+    <file path="/task.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380989295076" ignored="false" />
     <file path="/20131001103045_create_customers.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380623905550" ignored="false" />
     <file path="/20131001103058_create_projects.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380623929279" ignored="false" />
     <file path="/20131001103052_create_tasks.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380623997393" ignored="false" />
     <file path="/customers_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380648548279" ignored="false" />
-    <file path="/routes.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380751791821" ignored="false" />
-    <file path="/edit.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380753820468" ignored="false" />
-    <file path="/chronos_layout.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380659702130" ignored="false" />
-    <file path="/new.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380658879586" ignored="false" />
-    <file path="/index.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380753723093" ignored="false" />
+    <file path="/routes.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381008925163" ignored="false" />
+    <file path="/edit.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381011562128" ignored="false" />
+    <file path="/chronos_layout.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381012315387" ignored="false" />
+    <file path="/new.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381011636591" ignored="false" />
+    <file path="/index.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381009839702" ignored="false" />
     <file path="/customers_helper.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380648597866" ignored="false" />
-    <file path="/_form.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380747843437" ignored="false" />
+    <file path="/_form.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381010835353" ignored="false" />
     <file path="/projects_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380650275807" ignored="false" />
     <file path="/tasks_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380650537657" ignored="false" />
-    <file path="/20131001195800_create_timesheets.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380753418414" ignored="false" />
-    <file path="/timesheet.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380749756270" ignored="false" />
-    <file path="/timerow.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380658068623" ignored="false" />
-    <file path="/20131001200522_create_timerows.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380752736279" ignored="false" />
-    <file path="/timesheets_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380748326032" ignored="false" />
+    <file path="/20131001195800_create_timesheets.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380972604851" ignored="false" />
+    <file path="/timesheet.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381008945724" ignored="false" />
+    <file path="/timerow.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380992033578" ignored="false" />
+    <file path="/20131001200522_create_timerows.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380972267204" ignored="false" />
+    <file path="/timesheets_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381009194728" ignored="false" />
     <file path="/application.js" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380660347257" ignored="false" />
     <file path="/timetask.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380726893778" ignored="false" />
     <file path="/t.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380750811082" ignored="false" />
-    <file path="/timerows_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380751715997" ignored="false" />
+    <file path="/timerows_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381006467609" ignored="false" />
+    <file path="/devise.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380912865479" ignored="false" />
+    <file path="/_links.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380914633569" ignored="false" />
+    <file path="/user.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380980216266" ignored="false" />
+    <file path="/timesheets_helper.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380979913082" ignored="false" />
+    <file path="/users_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381009635897" ignored="false" />
+    <file path="/20131001103118_create_users.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380977085676" ignored="false" />
+    <file path="/settings.html.erb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1380995888687" ignored="false" />
+    <file path="/approvals_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381010210207" ignored="false" />
+    <file path="/application_controller.rb" changelist="48dad9db-9040-4531-bcc8-d05c240cdcc6" time="1381010168498" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,92 +103,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="timesheets_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/timesheets_controller.rb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="43" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+            <state line="15" column="5" selection-start="396" selection-end="549" vertical-scroll-proportion="-9.375">
+              <folding>
+                <element signature="e#480#498#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="239" selection-start="874" selection-end="874" vertical-scroll-proportion="-16.875">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="36" selection-start="1868" selection-end="2251" vertical-scroll-proportion="-32.083332">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timerows_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/timerows_controller.rb">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="64" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.0">
+            <state line="61" column="31" selection-start="2072" selection-end="2589" vertical-scroll-proportion="-30.208334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/timesheets/edit.html.erb">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="59" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.7614213">
+            <state line="62" column="86" selection-start="1835" selection-end="1835" vertical-scroll-proportion="-38.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="19" selection-start="1462" selection-end="1790" vertical-scroll-proportion="-33.75">
+            <state line="37" column="47" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-7.7083335">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="13" selection-start="1747" selection-end="1747" vertical-scroll-proportion="-32.5">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/customers/index.html.erb">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="13" selection-start="1670" selection-end="1670" vertical-scroll-proportion="-31.25">
+            <state line="25" column="0" selection-start="822" selection-end="1138" vertical-scroll-proportion="-15.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131001195800_create_timesheets.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131001195800_create_timesheets.rb">
+      <file leaf-file-name="chronos_layout.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/chronos_layout.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+            <state line="50" column="33" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.62240666">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131001200522_create_timerows.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131001200522_create_timerows.rb">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="46" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="75" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/timesheets/t.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="45" selection-start="1063" selection-end="2561" vertical-scroll-proportion="-48.416668">
-              <folding />
+            <state line="15" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.375">
+              <folding>
+                <element signature="e#479#497#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,22 +214,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/customer.rb" />
+        <option value="$PROJECT_DIR$/app/models/project.rb" />
+        <option value="$PROJECT_DIR$/app/models/task.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/public/design/css/style.css" />
+        <option value="$PROJECT_DIR$/app/views/customers/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/tasks/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/chronos_layout.html.erb" />
-        <option value="$PROJECT_DIR$/public/design/js/application.js" />
-        <option value="$PROJECT_DIR$/app/models/timetask.rb" />
-        <option value="$PROJECT_DIR$/app/views/timesheets/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/timesheets/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/timesheets_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/timesheet.rb" />
-        <option value="$PROJECT_DIR$/app/views/timesheets/t.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/timerows_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131001200522_create_timerows.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131001195800_create_timesheets.rb" />
-        <option value="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/projects/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/customers/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/timesheets/edit.html.erb" />
       </list>
     </option>
   </component>
@@ -273,18 +315,8 @@
               <option name="myItemId" value="design" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chronos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chronos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -298,11 +330,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,6 +371,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,7 +556,181 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unlocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="passwords" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="confirmations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="customers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="approvals" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,9 +792,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/users" />
       <recent name="$PROJECT_DIR$/app/views/timesheets" />
       <recent name="$PROJECT_DIR$/app/views/tasks" />
     </key>
@@ -807,6 +1095,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293556" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979952" sideWeight="0.6706444" order="0" side_tool="false" content_ui="combo" />
@@ -817,7 +1106,6 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -885,114 +1173,124 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/tasks_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/project.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="49" selection-end="995" vertical-scroll-proportion="0.0">
+        <state line="5" column="33" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/timesheets/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/task.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="190" selection-start="1505" selection-end="1505" vertical-scroll-proportion="-29.375">
+        <state line="4" column="33" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="137" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+        <state line="29" column="0" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/timesheets/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/public/design/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="83" selection-start="221" selection-end="221" vertical-scroll-proportion="-3.75">
+        <state line="64" column="1" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/timesheet.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/customers/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="41" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="14" column="6" selection-start="404" selection-end="560" vertical-scroll-proportion="-8.75">
+          <folding>
+            <element signature="e#491#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="20" selection-start="543" selection-end="543" vertical-scroll-proportion="-10.625">
+          <folding>
+            <element signature="e#488#506#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="17" selection-start="1009" selection-end="1270" vertical-scroll-proportion="-25.625">
+        <state line="15" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.375">
+          <folding>
+            <element signature="e#479#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="396" selection-end="549" vertical-scroll-proportion="-9.375">
+          <folding>
+            <element signature="e#480#498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="822" selection-end="1138" vertical-scroll-proportion="-15.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/timesheets/t.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="45" selection-start="1063" selection-end="2561" vertical-scroll-proportion="-48.416668">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/timesheets_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+        <state line="37" column="47" selection-start="1064" selection-end="1064" vertical-scroll-proportion="-7.7083335">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/timerows_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="64" selection-start="1520" selection-end="1520" vertical-scroll-proportion="0.0">
+        <state line="62" column="86" selection-start="1835" selection-end="1835" vertical-scroll-proportion="-38.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131001200522_create_timerows.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="46" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
+        <state line="73" column="36" selection-start="1868" selection-end="2251" vertical-scroll-proportion="-32.083332">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131001195800_create_timesheets.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
+        <state line="61" column="31" selection-start="2072" selection-end="2589" vertical-scroll-proportion="-30.208334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="19" selection-start="1462" selection-end="1790" vertical-scroll-proportion="-33.75">
-          <folding />
+        <state line="27" column="239" selection-start="874" selection-end="874" vertical-scroll-proportion="-16.875">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/chronos_layout.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="13" selection-start="1747" selection-end="1747" vertical-scroll-proportion="-32.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/customers/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="13" selection-start="1670" selection-end="1670" vertical-scroll-proportion="-31.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="75" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/timesheets/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="59" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.7614213">
+        <state line="50" column="33" selection-start="1974" selection-end="1974" vertical-scroll-proportion="0.62240666">
           <folding />
         </state>
       </provider>

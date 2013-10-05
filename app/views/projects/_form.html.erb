@@ -12,6 +12,12 @@
       </div>
       <div class="grid-content">
 
+        <ul>
+          <%- @project.errors.full_messages.each do |msg| %>
+              <li style="color:red;"><%= msg %></li>
+          <%- end %>
+        </ul>
+
         <div class="formRow">
           <%= f.label :name %>
           <div class="formRight">

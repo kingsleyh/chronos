@@ -1,0 +1,113 @@
+<%= form_for @user do |f| %>
+
+    <!--Input fields Start-->
+    <div class="grid">
+      <div class="grid-title">
+        <div class="pull-left">
+          <div class="icon-title"><i class="icon-bookmark"></i></div>
+          <span>User Details</span>
+
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="grid-content">
+
+        <ul>
+          <%- @user.errors.full_messages.each do |msg| %>
+              <li style="color:red;"><%= msg %></li>
+          <%- end %>
+        </ul>
+
+        <div class="formRow">
+          <%= f.label :email %>
+          <div class="formRight">
+            <%= f.text_field :email, :class => 'span7 input' %>
+          </div>
+        </div>
+
+        <div class="formRow">
+          <%= f.label :password %>
+          <div class="formRight">
+            <%= f.text_field :password, :class => 'span7 input' %>
+          </div>
+        </div>
+
+        <div class="formRow">
+          <div class="formRight">
+            <input type="submit" class="btn btn-primary" value="<%= button %>">
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+    </div>
+    <!--Input fields END-->
+
+<% end %>
+
+
+<% if !@user.id.nil? %>
+<%= form_for @user do |f| %>
+    <!--Input fields Start-->
+    <div class="grid">
+      <div class="grid-title">
+        <div class="pull-left">
+          <div class="icon-title"><i class="icon-bookmark"></i></div>
+          <span>User Settings</span>
+
+          <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="grid-content">
+
+        <ul>
+          <%- @user.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+          <%- end %>
+        </ul>
+
+        <div class="formRow">
+          <%= f.label :active %>
+          <div class="formRight">
+            <%= f.select(:active, ['true', 'false'], {}, {:class => 'chzn-select chosen_select width-10'}) %>
+          </div>
+        </div>
+
+        <div class="formRow">
+          <%= f.label :admin %>
+          <div class="formRight">
+            <%= f.select(:admin, ['true', 'false'], {}, {:class => 'chzn-select chosen_select width-10'}) %>
+          </div>
+        </div>
+
+        <div class="formRow">
+          <%= f.label :authorised_tasks %>
+          <div class="formRight">
+            <%= f.select(:authorised_tasks, options_for_select(Task.all.collect { |p| ["#{p.project.name} -> #{p.name}", p.id] },@user.authorised_tasks), {}, {:multiple => true, :class => 'chzn-select chosen_select width-10'}) %>
+          </div>
+        </div>
+
+        <div class="formRow">
+          <%= f.label :default_task %>
+          <div class="formRight">
+            <%= f.select(:default_task, Task.authorised_for_user(@user.id).collect { |p| ["#{p.project.name} -> #{p.name}", p.id] }, {}, {:class => 'chzn-select chosen_select width-10'}) %>
+          </div>
+        </div>
+
+        <div class="formRow">
+          <div class="formRight">
+            <input type="submit" class="btn btn-primary" value="<%= button %>">
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+    </div>
+    <!--Input fields END-->
+
+<% end %>
+<% end %>

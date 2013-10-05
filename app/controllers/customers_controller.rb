@@ -1,5 +1,7 @@
 class CustomersController < ApplicationController
 
+  before_filter :authenticate_user!, :admin_only
+
   layout 'chronos_layout'
 
   def index

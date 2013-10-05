@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"  class="body-error"><head>
+    <meta charset="utf-8">
+    <title>Chronos - Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/design/css/login.css" rel="stylesheet">
+    <link href="/design/css/bootstrap.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="/design/css/icon/font-awesome.css">
+    <link rel="stylesheet" href="/design/css/bootstrap-responsive.css">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/design/images/icons/favicon.ico">
+
+  <style>
+    .new_user { background: white; margin-bottom:0px;}
+    #error_explanation h2 {font-size: 14px; color:red;}
+    #error_explanation li {color:red;}
+    #error_explanation {padding:10px;}
+  </style>
+
+  </head>
+
+  <body>
+
+        <div id="wrapper">
+            <div id="login" class="animate form position">
+              <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+                    <div class="content-login">
+                    <div class="header">Chronos Login</div>
+
+                      <%= devise_error_messages! %>
+
+                    <div class="inputs">
+                      <%= f.email_field :email, :placeholder => 'Email', :autofocus => true %>
+                      <%= f.password_field :password, :placeholder => 'Password' %>
+                      <%= f.password_field :password_confirmation, :placeholder => 'Password Confirmation' %>
+                    </div>
+                   <%= render "devise/shared/links" %>
+                    <div class="clear"></div>
+                    <div class="button-login"><%= f.submit 'Sign up' %></div>
+                    </div>
+
+                    <div class="footer-login">
+                     <!--<div class="pull-left">Sign In With</div>-->
+                     <!--<div class="pull-right">-->
+                       <!--<ul class="social-links">-->
+                          <!--<li class="facebook"><a href="#"><span>facebook</span></a></li>-->
+                          <!--<li class="twitter"><a href="#"><span>twitter</span></a></li>-->
+                          <!--<li class="google-plus"><a href="#"><span>google</span></a></li>-->
+                       <!--</ul>-->
+                     <!--</div>-->
+                     <div class="clear"></div>
+                    </div>
+
+              <% end %>
+
+            </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/design/js/jquery.min.js"></script>
+
+
+  </body>
+</html>
+
+
+
