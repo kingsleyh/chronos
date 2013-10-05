@@ -94,7 +94,7 @@ class TimesheetsController < ApplicationController
   def destroy
     @timesheet = Timesheet.find(params[:id])
     restrict_timesheet
-    if !@timesheet.locked?
+    if !@timesheet.locked? or current_user.admin?
       if @timesheet.destroy
         redirect_to :timesheets
       end

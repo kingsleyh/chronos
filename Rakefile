@@ -44,7 +44,7 @@ namespace :thin do
 
     puts 'generating rap file'
     FileUtils.rm_rf(File.dirname(__FILE__) + '/../chronos.rap')
-    Rappa.new(:input_directory => File.dirname(__FILE__) + '/../trackrecord', :output_directory => File.dirname(__FILE__) + '/../').package
+    Rappa.new(:input_directory => File.dirname(__FILE__) + '/../chronos', :output_directory => File.dirname(__FILE__) + '/../').package
 
     puts 'Deploying to timesheet.masterthought.net'
     Rappa.new(:input_rap => File.dirname(__FILE__) + '/../chronos.rap', :url => 'http://kings-001.vm.brightbox.net/api/deploy', :api_key => 'kings_key').deploy
