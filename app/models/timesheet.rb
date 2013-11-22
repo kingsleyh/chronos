@@ -33,11 +33,15 @@ class Timesheet < ActiveRecord::Base
   end
 
   def locked?
-    %w(submitted approved).include?(status)
+    %w(submitted approved processed).include?(status)
   end
 
   def submitted?
     status == 'submitted'
+  end
+
+  def approved?
+    status == 'approved'
   end
 
   def week_commencing_pretty

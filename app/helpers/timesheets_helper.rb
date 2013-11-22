@@ -20,6 +20,7 @@ module TimesheetsHelper
         'new' => colour_map[:blue],
         'submitted' => colour_map[:amber],
         'approved' => colour_map[:green],
+        'processed' => colour_map[:green],
         'rejected' => colour_map[:red]
     }
     raw('<span class="label label-' + status_map[status] + '">' + status + '</span>')

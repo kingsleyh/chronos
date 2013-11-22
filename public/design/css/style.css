@@ -361,6 +361,12 @@ div.settings-box {
 	color:#f3f3f3;
 	margin-left:15px;
 }
+.profile-version {
+	float:left;
+	margin-top:10px;
+	color:#f3f3f3;
+	margin-left:15px;
+}
 .profile-username span {
 	color:#b7b7b7;
 }

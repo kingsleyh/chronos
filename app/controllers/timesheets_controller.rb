@@ -80,6 +80,28 @@ class TimesheetsController < ApplicationController
     redirect_to root_path
   end
 
+  def unapprove
+    @timesheet = Timesheet.find(params[:id])
+    restrict_timesheet
+    if !params[:submit].empty? and @timesheet.locked?
+      @timesheet.status = 'submitted'
+      @timesheet.save
+      flash[:notice] = "Successfully unapproved Timesheet."
+    end
+    redirect_to root_path
+  end
+
+  def process_it
+    @timesheet = Timesheet.find(params[:id])
+    restrict_timesheet
+    if !params[:submit].empty? and @timesheet.locked?
+      @timesheet.status = 'processed'
+      @timesheet.save
+      flash[:notice] = "Successfully processed Timesheet."
+    end
+    redirect_to root_path
+  end
+
   def reject
     @timesheet = Timesheet.find(params[:id])
     restrict_timesheet

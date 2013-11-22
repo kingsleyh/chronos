@@ -30,6 +30,8 @@ Chronos::Application.routes.draw do
   get 'users/settings' => 'users#settings', :as => :user_settings
   get 'timesheets/submit' => 'timesheets#submit', :as => :timesheet_submit
   get 'timesheets/approve' => 'timesheets#approve', :as => :timesheet_approve
+  get 'timesheets/unapprove' => 'timesheets#unapprove', :as => :timesheet_unapprove
+  get 'timesheets/process' => 'timesheets#process_it', :as => :timesheet_process
   get 'timesheets/reject' => 'timesheets#reject', :as => :timesheet_reject
   post 'users/update_settings' => 'users#update_settings', :as => :update_settings
 

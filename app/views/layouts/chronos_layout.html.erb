@@ -57,6 +57,11 @@
     <!--profile box-->
     <% if user_signed_in? %>
         <div class="dropdown left profile">
+          <span class="double-spacer"></span>
+
+                    <div class="profile-version">    <span style="font-weight: normal;" class="label label-inverse">Version <%= show_version %></span></div>
+        </div>
+        <div class="dropdown left profile">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             <span class="double-spacer"></span>
 

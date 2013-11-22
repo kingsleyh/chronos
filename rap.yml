@@ -1,6 +1,6 @@
 ---
 :name: Chronos
-:version: 0.0.3
+:version: 0.0.4
 :server_type: thin
 :start_script: start.sh
 :stop_script: stop.sh

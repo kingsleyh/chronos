@@ -96,6 +96,14 @@
                   </div>
                 </div>
             <% end %>
+            <% if @timesheet.approved? %>
+                <div class="formRow">
+                  <div class="formRight">
+                    <%= link_to 'Process Timesheet', timesheet_process_path(:submit => true, :id => @timesheet.id), {:class => 'btn btn-success'} %>
+                    <%= link_to 'Unapprove Timesheet', timesheet_unapprove_path(:submit => true, :id => @timesheet.id), {:class => 'btn btn-danger'} %>
+                  </div>
+                </div>
+            <% end %>
         <% end %>
     <% end %>
 
@@ -166,9 +174,6 @@
                   </tbody>
                 </table>
 
-
-                <!--- timesheet messing -->
-
                 <%= f.hidden_field(:timesheet_id, :value => @timesheet.id) %>
 
                 <div class="formRow">
@@ -183,6 +188,35 @@
             </div>
             <!--Input fields END-->
 
+            <div class="grid">
+              <div class="grid-title">
+                <div class="pull-left">
+                  <div class="icon-title"><i class="icon-question-sign"></i></div>
+                  <span>Help & Tips</span>
+
+                  <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="grid-content">
+
+                <div class="row-fluid">
+                          <span class="label-blue">
+                            Adding the same task more than once will replace the existing task with the newer one. If you need to add more hours to existing columns you can just
+                            add the task again but remember to fill in all the hours as required.
+                          </span>
+                  <br/>
+                  <br/>
+                          <span class="label-green">
+                            When you are happy with all the hours and you don't need to make any changes you can submit the timesheet. You cannot make changes after submitting the
+                            timesheet.
+                           </span>
+                </div>
+
+                <div class="clearfix"></div>
+
+              </div>
+            </div>
         <% end %>
     <% end %>
 <% end %>
