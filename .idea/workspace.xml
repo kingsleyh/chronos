@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48dad9db-9040-4531-bcc8-d05c240cdcc6" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/public/design/images/logo2.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/approvals_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/approvals_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/chronos.iml" afterPath="$PROJECT_DIR$/.idea/chronos.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/chronos_layout.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/chronos_layout.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/timesheets/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/timesheets/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/approvals/index.html.erb" afterPath="$PROJECT_DIR$/app/views/approvals/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rap.yml" afterPath="$PROJECT_DIR$/rap.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/design/css/style.css" afterPath="$PROJECT_DIR$/public/design/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/timesheet.rb" afterPath="$PROJECT_DIR$/app/models/timesheet.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/timesheets_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/timesheets_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/timesheets_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/timesheets_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chronos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -237,15 +223,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="timesheet.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/timesheet.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="35" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/approvals/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -285,10 +262,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.27596438">
               <folding />
             </state>
           </provider>
@@ -416,6 +402,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chronos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -813,13 +831,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/stop.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="98" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="29" vertical-scroll-proportion="0.0">
@@ -926,6 +937,13 @@
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.27596438">
           <folding />
         </state>
       </provider>
